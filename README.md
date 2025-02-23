@@ -20,4 +20,21 @@ The Inventory Management System is a web application developed using **Spring Bo
   - MySQL
 - **Frontend**: 
   - Thymeleaf (or specify other technologies if used)
-- **Tes
+- **Testing**: 
+  - JUnit
+- **Development Tools**:
+  - Maven
+  - Git
+
+## Getting Started
+To get a local copy of the Inventory Management System up and running, follow these steps:
+
+### Prerequisites
+- Java 11 or higher
+- MySQL server
+- Maven
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/inventory-management-system.git
