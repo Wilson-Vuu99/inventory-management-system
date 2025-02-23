@@ -37,4 +37,4 @@ To get a local copy of the Inventory Management System up and running, follow th
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/inventory-management-system.git
+   git clone https://github.com/wilson-vuu99/inventory-management-system.git
