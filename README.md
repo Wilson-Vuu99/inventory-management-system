@@ -42,12 +42,12 @@ To get a local copy of the Inventory Management System up and running, follow th
 2. Navigate to the project directory
    cd inventory-management-system
 
-3.Update your database connection settings in 
-  ```bash
-  src/main/resources/application.properties
-  spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
-  spring.datasource.username=your_username
-  spring.datasource.password=your_password
-4.Start the application:
-  ```bash
-  mvn spring-boot:run
+3. Update your database connection settings in 
+   ```bash
+   src/main/resources/application.properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+4. Start the application:
+   ```bash
+   mvn spring-boot:run
