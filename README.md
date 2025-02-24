@@ -9,6 +9,9 @@ The Inventory Management System is a web application that allows users to manage
 - Track suppliers and stock levels
 - User authentication and authorization
 
+## Database Schema
+[![Untitled.png](https://i.postimg.cc/VN3fq5Nn/Untitled.png)](https://postimg.cc/v1twMYfZ)
+
 ## Technologies Used
 - **Backend**: 
   - Java
