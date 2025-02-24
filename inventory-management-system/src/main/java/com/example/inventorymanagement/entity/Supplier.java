@@ -1,12 +1,13 @@
-import javax.persistence.*;
+package com.example.inventorymanagement.entity;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "supplier")
+@Table(name = "suppliers")
 public class Supplier {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int supplierId;
+    private Long supplierId;
 
     @Column(name = "supplier_name", nullable = false, length = 50)
     private String supplierName;
@@ -18,8 +19,8 @@ public class Supplier {
     public Supplier() {}
 
     // Getters and Setters
-    public int getSupplierId() { return supplierId; }
-    public void setSupplierId(int supplierId) { this.supplierId = supplierId; }
+    public Long getSupplierId() { return supplierId; }
+    public void setSupplierId(Long supplierId) { this.supplierId = supplierId; }
     public String getSupplierName() { return supplierName; }
     public void setSupplierName(String supplierName) { this.supplierName = supplierName; }
     public String getSupplierContact() { return supplierContact; }

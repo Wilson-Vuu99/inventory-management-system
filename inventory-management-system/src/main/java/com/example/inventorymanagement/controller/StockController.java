@@ -1,6 +1,12 @@
+package com.example.inventorymanagement.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.example.inventorymanagement.service.StockService;
+import com.example.inventorymanagement.entity.Stock;
+
+
+
 
 import java.util.List;
 

@@ -1,4 +1,7 @@
-import org.springframework.data.jpa.repository.JpaRepository;
+package com.example.inventorymanagement.repository;
 
-public interface NameRepository extends JpaRepository<User, Long> {
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.inventorymanagement.entity.User;
+
+public interface UserRepository extends JpaRepository<User, Long> {
 }

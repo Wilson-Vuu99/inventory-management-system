@@ -1,4 +1,7 @@
-import org.springframework.data.jpa.repository.JpaRepository;
+package com.example.inventorymanagement.repository;
 
-public interface SupplierRepository extends JpaRepository<Supplier, Integer> {   
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.inventorymanagement.entity.Supplier;
+
+public interface SupplierRepository extends JpaRepository<Supplier, Long> {
 }

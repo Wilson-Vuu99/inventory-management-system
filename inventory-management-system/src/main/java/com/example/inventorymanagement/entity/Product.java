@@ -1,4 +1,5 @@
-import javax.persistence.*;
+package com.example.inventorymanagement.entity;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "product")

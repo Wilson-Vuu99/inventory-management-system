@@ -1,7 +1,6 @@
-package com.yourpackage.controller;
-
-import com.yourpackage.entity.Category;
-import com.yourpackage.service.CategoryService;
+package com.example.inventorymanagement.controller;
+import com.example.inventorymanagement.entity.Category;
+import com.example.inventorymanagement.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +17,9 @@ public class CategoryController {
     // Get all categories
     @GetMapping
     public List<Category> getAllCategories() {
-        return categoryService.getAllCategories();
+        return List.of(new Category(1L, "Sample Category")); // Replace with your category fields
     }
+    
 
     // Get a category by ID
     @GetMapping("/{id}")
@@ -39,7 +39,7 @@ public class CategoryController {
     @PutMapping("/{id}")
     public ResponseEntity<Category> updateCategory(@PathVariable Long id, @RequestBody Category category) {
         return categoryService.updateCategory(id, category)
-                .map(ResponseEntity::ok)
+                .map(updatedCategory -> ResponseEntity.ok(updatedCategory))
                 .orElse(ResponseEntity.notFound().build());
     }
 

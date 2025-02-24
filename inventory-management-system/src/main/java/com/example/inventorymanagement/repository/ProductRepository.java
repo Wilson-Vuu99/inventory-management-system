@@ -1,4 +1,7 @@
-import org.springframework.data.jpa.repository.JpaRepository;
+package com.example.inventorymanagement.repository;
 
-public interface ProductRepository extends JpaRepository<Product, Long> {
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.inventorymanagement.entity.Product;
+
+public interface ProductRepository extends JpaRepository<Product, Integer> {
 }
