@@ -3,51 +3,31 @@ import javax.persistence.*;
 @Entity
 @Table(name = "users")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userID;
+    private Long userId;
 
     @Column(name = "user_name", nullable = false, length = 50)
     private String userName;
-    
-    @Column(name = "first_name", nullable = false, length = 45)
-    private String firstName;
 
-    @Column(name = "last_name", nullable = false, length = 45)
-    private String lastName;
+    @Column(name = "role", nullable = false, length = 20)
+    private String role; // New field for user role
 
-    @Column(name = "contact_number", nullable = false)
-    private String contactNumber;
-
-    @Column(name = "email", nullable = false, unique = true, length = 45)
-    private String userEmail;
-
-    @Column(name = "address", length = 105)
-    private String address;
-
+    // No-argument constructor
     public User() {}
 
-    public User(String userName, String firstName, String lastName, String contactNumber, String email, String address) {
+    // Constructor with parameters
+    public User(String userName, String role) {
         this.userName = userName;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.contactNumber = contactNumber;
-        this.userEmail = email;
-        this.address = address;
+        this.role = role;
     }
 
-    public Long getUserID() { return userID; }
-    public void setUserID(Long userID) { this.userID = userID; }
+    // Getters and Setters
+    public Long getUserId() { return userId; }
+    public void setUserId(Long userId) { this.userId = userId; }
     public String getUserName() { return userName; }
     public void setUserName(String userName) { this.userName = userName; }
-    public String getFirstName() { return firstName; }
-    public void setFirstName(String firstName) { this.firstName = firstName; }
-    public String getLastName() { return lastName; }
-    public void setLastName(String lastName) { this.lastName = lastName; }
-    public String getContactNumber() { return contactNumber; }
-    public void setContactNumber(String contactNumber) { this.contactNumber = contactNumber; }
-    public String getEmail() { return userEmail; }
-    public void setEmail(String userEmail) { this.userEmail = userEmail; }
-    public String getAddress() { return address; }
-    public void setAddress(String address) { this.address = address; }
+    public String getRole() { return role; }
+    public void setRole(String role) { this.role = role; }
 }
